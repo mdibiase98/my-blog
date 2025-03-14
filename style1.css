@@ -1,13 +1,24 @@
-/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     background: url('output.gif') repeat-x;
     background-size: cover;
+    background-position: center 20%; /* Shifts the background down by 20% */
     animation: moveBackground 10s linear infinite;
-    background-color: black;
     color: rgb(192, 188, 173);
     font-family: 'Press Start 2P', sans-serif;
     text-align: center;
     padding: 20px;
+    margin: 0; /* Ensures no extra margin at the top of the body */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 20%; /* Keep the background shifted at 20% from the top */
+    }
+    100% {
+        background-position: 100% 20%; /* Maintain the shift throughout the animation */
+    }
 }
 
 .resume {
@@ -15,41 +26,9 @@ body {
     margin: auto;
     border: 2px solid white;
     padding: 20px;
+    margin-top: 100px; /* You can adjust this if you'd like more space between the resume and the top */
 }
 
 h1, h2, h3 {
     text-transform: uppercase;
-}
-
-/* Mobile-friendly adjustments */
-@media (max-width: 768px) {
-    /* For tablets and smaller devices */
-    .resume {
-        width: 90%;  /* Make the content area wider for smaller screens */
-        padding: 15px;  /* Adjust padding */
-    }
-
-    h1, h2, h3 {
-        font-size: 1.5rem;  /* Smaller text for headings */
-    }
-
-    body {
-        padding: 15px;  /* Adjust body padding for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    /* For phones and smaller devices */
-    .resume {
-        width: 95%;  /* Use almost full screen width on smaller phones */
-        padding: 10px;  /* Smaller padding */
-    }
-
-    h1, h2, h3 {
-        font-size: 1.2rem;  /* Smaller text size for headings */
-    }
-
-    body {
-        padding: 10px;  /* Adjust body padding */
-    }
 }
