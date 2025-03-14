@@ -8,6 +8,8 @@ body {
     font-family: 'Press Start 2P', sans-serif;
     text-align: center;
     padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .resume {
@@ -15,6 +17,8 @@ body {
     margin: auto;
     border: 2px solid white;
     padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Make the background slightly transparent */
+    border-radius: 10px;
 }
 
 h1, h2, h3 {
@@ -22,34 +26,35 @@ h1, h2, h3 {
 }
 
 /* Mobile-friendly adjustments */
+
+/* For tablets and smaller devices (below 768px) */
 @media (max-width: 768px) {
-    /* For tablets and smaller devices */
+    body {
+        padding: 15px;
+    }
+
     .resume {
-        width: 90%;  /* Make the content area wider for smaller screens */
-        padding: 15px;  /* Adjust padding */
+        width: 80%;
+        padding: 15px;
     }
 
     h1, h2, h3 {
-        font-size: 1.5rem;  /* Smaller text for headings */
-    }
-
-    body {
-        padding: 15px;  /* Adjust body padding for smaller screens */
+        font-size: 1.5rem;  /* Slightly smaller headings */
     }
 }
 
+/* For phones and smaller devices (below 480px) */
 @media (max-width: 480px) {
-    /* For phones and smaller devices */
+    body {
+        padding: 10px;
+    }
+
     .resume {
-        width: 95%;  /* Use almost full screen width on smaller phones */
-        padding: 10px;  /* Smaller padding */
+        width: 90%;  /* Use almost full screen width */
+        padding: 10px;
     }
 
     h1, h2, h3 {
-        font-size: 1.2rem;  /* Smaller text size for headings */
-    }
-
-    body {
-        padding: 10px;  /* Adjust body padding */
+        font-size: 1.2rem;  /* Smaller headings for better fit */
     }
 }
