@@ -55,15 +55,99 @@ body {
     color: white; /* White text for quote */
 }
 
-/* Mobile responsiveness */
-@media only screen and (max-width: 600px) {
+/* Target iPhones specifically */
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) { /* iPhone X, XS, 11 Pro */
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .retro-button {
-        padding: 5px 10px;
-        font-size: 14px;
-        margin-bottom: 10px; /* Adds spacing for stacked buttons */
-        width: auto; /* Ensures buttons fit within smaller screens */
-        display: block; /* Stacks buttons vertically on mobile devices */
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 90%; /* Prevents buttons from being too wide on mobile screens */
-        text-align:center
+        margin: 10px 0;
+        width: 80%; /* Adjust width as needed */
+        text-align: center;
+    }
+}
+
+@media only screen 
+and (device-width : 390px) 
+and (device-height : 844px) 
+and (-webkit-device-pixel-ratio : 3) { /* iPhone 12, 12 Pro, 13, 13 Pro, 14 */
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .retro-button {
+        margin: 10px 0;
+        width: 80%; /* Adjust width as needed */
+        text-align: center;
+    }
+}
+
+@media only screen 
+and (device-width : 428px) 
+and (device-height : 926px) 
+and (-webkit-device-pixel-ratio : 3) { /* iPhone 12 Pro Max, 13 Pro Max, 14 Plus, 14 Pro Max */
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .retro-button {
+        margin: 10px 0;
+        width: 80%; /* Adjust width as needed */
+        text-align: center;
+    }
+}
+
+@media only screen 
+and (device-width : 320px) 
+and (device-height : 568px) 
+and (-webkit-device-pixel-ratio : 2) { /* iPhone SE (1st gen), 5, 5s, 5c */
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .retro-button {
+        margin: 10px 0;
+        width: 80%; /* Adjust width as needed */
+        text-align: center;
+    }
+}
+
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 667px) 
+and (-webkit-device-pixel-ratio : 2) { /* iPhone 6, 6s, 7, 8, SE (2nd gen) */
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .retro-button {
+        margin: 10px 0;
+        width: 80%; /* Adjust width as needed */
+        text-align: center;
+    }
+}
+
+@media only screen 
+and (device-width : 414px) 
+and (device-height : 736px) 
+and (-webkit-device-pixel-ratio : 3) { /* iPhone 6 Plus, 6s Plus, 7 Plus, 8 Plus */
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .retro-button {
+        margin: 10px 0;
+        width: 80%; /* Adjust width as needed */
+        text-align: center;
+    }
+}
