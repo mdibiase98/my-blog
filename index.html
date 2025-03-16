@@ -3,20 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Retro Buttons</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <div class="resume">
-        <h1>THIS IS A 2025 RESUME</h1>
-        <h1>MICHAEL DIBIASE</h1>
-        <h2>ADVERTISING ACCOUNT MANAGER</h2>
-        <p>MDIBIASE100 @GMAIL.COM</p>
-        <p>(914) 714-1940</p>
-        <p>DISNEY/ESPN LINEAR ACCOUNT MANAGER 1YR</p>
-        <p>TWITTER CUSTOMER SUCCESS MANAGER 1YR</p>
-        <p>DOUBLEVERIFY ASSISTANT DIGITAL ACCOUNT MANAGER 1YR</p>
-        <p>SYRACUSE UNIVERSITY--NEWHOUSE SCHOOL, B.S. in ADVERTISING</p>
+    <div class="background-gif"></div>
+    <div class="button-container">
+        <button class="retro-button tab-button" onclick="openTab(event, 'home')">Home</button>
+        <button class="retro-button tab-button" onclick="openTab(event, 'blog')">Blog</button>
+        <button class="retro-button tab-button" onclick="openTab(event, 'shop')">Shop</button>
+        <button class="retro-button tab-button" onclick="openTab(event, 'gallery')">Gallery</button>
+        <button class="retro-button tab-button" onclick="openTab(event, 'about')">About</button>
+        <button class="retro-button tab-button" onclick="openTab(event, 'contact')">Contact</button>
     </div>
+    
+    <main>
+        <section id="home" class="tab-content" style="display:block;">
+            <!-- Home content -->
+        </section>
+        
+        <section id="blog" class="tab-content" style="display:none;">
+            <!-- Blog content -->
+        </section>
+        
+        <section id="shop" class="tab-content" style="display:none;">
+            <!-- Shop content -->
+        </section>
+        
+        <section id="gallery" class="tab-content" style="display:none;">
+            <!-- Gallery content -->
+        </section>
+        
+        <section id="about" class="tab-content" style="display:none;">
+            <!-- About content -->
+        </section>
+        
+        <section id="contact" class="tab-content" style="display:none;">
+            <!-- Contact content -->
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
 </body>
 </html>
